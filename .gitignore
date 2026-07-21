@@ -18,3 +18,7 @@ dist_*
 
 # stray temp files
 *.tmp
+
+# generated vite config output (from tsc -b)
+vite.config.js
+vite.config.d.ts
