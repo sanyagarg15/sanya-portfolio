@@ -32,8 +32,8 @@ export default function About() {
 
         <Reveal delay={0.2}>
           <div className="about-photo">
-         
-            <img className="photo" src="/profile.jpg" alt="Sanya Garg" loading="lazy" />
+            <div className="frame" />
+            <img className="photo" src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Sanya Garg" loading="lazy" />
           </div>
         </Reveal>
       </div>

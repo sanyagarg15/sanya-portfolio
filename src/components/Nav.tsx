@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const links = [
-  { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
-  { label: "Work", href: "#work" },
-  { label: "Contact", href: "#contact" },
+  { label: "about", href: "#about" },
+  { label: "experience", href: "#experience" },
+  { label: "work", href: "#work" },
+  { label: "contact", href: "#contact" },
 ];
 
-const RESUME = "/Sanya_Garg_Resume.pdf";
+const RESUME = `${import.meta.env.BASE_URL}Sanya_Garg_Resume.pdf`;
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -45,7 +45,7 @@ export default function Nav() {
           ))}
           <li>
             <a className="nav-resume" href={RESUME} target="_blank" rel="noreferrer">
-              Resume
+              resume
             </a>
           </li>
         </ul>
@@ -91,7 +91,7 @@ export default function Nav() {
                 rel="noreferrer"
                 onClick={() => setOpen(false)}
               >
-                Resume
+                resume
               </a>
             </motion.aside>
           </>

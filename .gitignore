@@ -22,3 +22,6 @@ dist_*
 # generated vite config output (from tsc -b)
 vite.config.js
 vite.config.d.ts
+
+# vite temp config artifacts
+vite.config.*.timestamp-*
