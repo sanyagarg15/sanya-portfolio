@@ -1,0 +1,20 @@
+# dependencies
+node_modules
+
+# build output
+dist
+dist-ssr
+dist_*
+*.local
+
+# TS build info
+*.tsbuildinfo
+
+# editor / OS
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# stray temp files
+*.tmp
